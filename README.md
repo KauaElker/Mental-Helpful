@@ -1,2 +1,11 @@
-# Mental-Helpful
-Site de saúde mental com funcionalidades para cadastro/login, home page e abas relacionadas.
+## MentalHelpful
+Site de saúde mental com funcionalidades como cadastro/login, home page e abas relacionadas.
+
+### Tecnologias Utilizadas
+- HTML, CSS
+- MySQL com XAMPP
+- Visual Studio Code
+
+### Como executar localmente
+1. Clone o repositório: `git clone <link_do_repositorio>`
+2. Importe o banco de dados usando o arquivo `mentalhelpful.sql` e configure o XAMPP.
