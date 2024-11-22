@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - Confirmação Pix</title>
+    <link rel="stylesheet" href="../src/css/pi.css">
+    <style>
+        /* Estilo adicional para a página de confirmação Pix */
+        body {
+            background-color: #f0f7f5;
+        }
+
+        .navbar {
+            background-color: #1a65bb; /* Azul */
+            padding: 20px;
+        }
+
+        .navbar__logo img {
+            max-height: 50px;
+        }
+
+        .navbar__links a {
+            color: #fff; /* Texto branco */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar__link--selected {
+            border-bottom: 2px solid #62a814; /* Verde */
+        }
+
+        .qr-section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            padding: 40px;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .qr-section h1 {
+            color: #1a65bb; /* Azul */
+            font-size: 28px;
+            border-bottom: 2px solid #62a814; /* Verde */
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .qr-section p {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .qr-code {
+            margin: 0 auto 30px;
+            display: block;
+            width: 250px;
+            height: 250px;
+            background-color: #f2f2f2;
+            border-radius: 8px;
+            background-image: url('IMG/qr-code-placeholder.png'); /* QR code falso */
+            background-size: cover;
+        }
+
+        .pix-confirmation {
+            font-size: 18px;
+            color: #62a814; /* Verde */
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a65bb; /* Azul */
+            color: #fff;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header>
+            <div class="navbar">
+                <div class="navbar__wrap">
+                    <div class="navbar__logo">
+                        <a href="#">
+                            <amp-img alt="Logo" src="IMG/Logo.jpeg" width="202" height="40" layout="responsive"></amp-img>
+                        </a>
+                    </div>
+                    <div class="navbar__links">
+                        <a href="Pi.html" class="navbar__link">Home</a>
+                        <a href="Terapia.html" class="navbar__link navbar__link--selected">Terapia</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Seção QR Code -->
+        <div class="qr-section">
+            <h1>Pagamento via Pix</h1>
+            <p>Valor: R$ 120,00</p>
+            <div class="qr-code" href="../IMG/PIX.jpeg"></div> 
+            <p class="pix-confirmation">Aguardando confirmação de Pix...</p>
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <p>&copy; 2024 Saúde Mental. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
