@@ -7997,3 +7997,20 @@ body {
         -ms-animation: none;
         animation: none
 }}
+
+#login-modal{
+    display: flex;
+}
+
+#login-modal.hidden{
+    display: none;
+}
+
+#register-modal{
+    display: flex;
+}
+
+#register-modal.hidden{
+    display: none;
+}
+
