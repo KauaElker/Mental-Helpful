@@ -4,37 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criação de Conta</title>
-    <link rel="stylesheet" href="/css/pi.css"> <!-- Link para seu CSS -->
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="../css/pi.css"> <!-- Link para seu CSS -->
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <h1>Criar Conta</h1>
     <div class="modal" id="login-modal">
-      <h2>Login</h2>
+        <h2>Login</h2>
       <form id="login-form" onsubmit="processLogin(event)">
-        <label for="email-login">E-mail:</label>
-        <input type="text" id="email-login" name="email-login" required>
-        <label for="senha-login">Senha:</label>
-        <input type="password" id="senha-login" name="senha-login" required>
+        <section>
+          <label for="email-login">E-mail:</label>
+          <input type="text" id="email-login" name="email-login" required>
+        </section>
+        <section>
+          <label for="senha-login">Senha:</label>
+          <input type="password" id="senha-login" name="senha-login" required>
+        </section>
         <button class="login-button" type="submit">Entrar</button>
       </form>  
-      <button class="login-button" id="show-register">Não tenho conta, realizar cadastro</button>
+      <a class="login-button" id="show-register">Não tenho conta, realizar cadastro</a>
     </div>
 
     <div class="modal hidden" id="register-modal">
       <h2>Cadastro</h2>
       <form id="register-form" onsubmit="processRegister(event)">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" required>
-        <label for="register-password">Senha:</label>
-        <input type="password" id="register-password" name="register-password" required>
+        <section>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+        </section>
+        <section>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </section>
+        <section>
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required>
+        </section>
+        <section>
+          <label for="register-password">Senha:</label>
+          <input type="password" id="register-password" name="register-password" required>
+        </section>
         <button class="login-button" type="submit">Cadastrar</button>
       </form>
-      <button class="cadastro-button" id="show-login">Já tenho conta, voltar ao login</button>
+      <a class="cadastro-button" id="show-login">Já tenho conta, voltar ao login</a>
     </div>
 
     <script>

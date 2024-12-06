@@ -14,6 +14,7 @@ app.get('/home', (req, res) => {
   res.sendFile(path.join(__dirname, '/K.HTML/home.html'));
 });
 
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
